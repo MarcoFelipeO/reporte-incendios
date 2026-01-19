@@ -2,6 +2,8 @@ package rescate.naturaleza.demo.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import rescate.naturaleza.demo.enums.ReportEnum;
+import rescate.naturaleza.demo.enums.ReportStatusEnum;
 
 import java.util.Date;
 
@@ -21,7 +23,7 @@ public class Report {
 
     @Enumerated(EnumType.STRING)
     @Column(name="REPORT_TYPE")
-    private  ReportEnum report;
+    private ReportEnum report;
 
     @Column(name="LONGITUDE")
     private Double longitude;
