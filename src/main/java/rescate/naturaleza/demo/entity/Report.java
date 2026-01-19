@@ -21,7 +21,7 @@ public class Report {
 
     @Enumerated(EnumType.STRING)
     @Column(name="REPORT_TYPE")
-    private String ReportEnum;
+    private  ReportEnum report;
 
     @Column(name="LONGITUDE")
     private Double longitude;
@@ -37,6 +37,6 @@ public class Report {
 
     @Enumerated(EnumType.STRING)
     @Column(name="REPORT_STATUS")
-    private String ReportStatusEnum;
+    private ReportStatusEnum status;
 
 }
