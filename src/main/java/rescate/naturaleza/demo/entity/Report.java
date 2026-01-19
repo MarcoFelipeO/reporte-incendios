@@ -23,7 +23,10 @@ public class Report {
 
     @Enumerated(EnumType.STRING)
     @Column(name="REPORT_TYPE")
-    private ReportEnum report;
+    private ReportEnum reportType;
+
+    @Column(name="LATITUDE")
+    private Double latitude;
 
     @Column(name="LONGITUDE")
     private Double longitude;
