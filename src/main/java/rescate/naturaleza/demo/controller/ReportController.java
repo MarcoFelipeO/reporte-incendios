@@ -19,10 +19,6 @@ public class ReportController {
 
     private final ReportService service;
 
-    public ReportController(ReportService service){
-
-        this.service = service;
-    }
 
     @PostMapping(
             consumes = MediaType.APPLICATION_JSON_VALUE,
