@@ -8,6 +8,8 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: rescate
       MYSQL_PASSWORD: rescate
+    ports:
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     healthcheck:
